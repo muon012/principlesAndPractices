@@ -34,5 +34,20 @@ int main(){
     cout << "If you choose to input 'm' as a floating-point number, C++ will only recognize the digits before the decimal point as the value of 'm'." << endl;
     cout << endl;
 
+    // You can compare strings alphabetically using the "greater than" or "less than"  operators
+    cout << "Enter two names: " << endl;
+    string first{" "};
+    string second{" "};
+    cin >> first >> second;
+    if(first == second){
+        cout << "That's the same name twice!" << endl;
+    }
+    if(first < second){
+        cout << first << " is alphabetically first before " << second << endl;
+    }
+    if(first > second){
+        cout << first << " is alphabetically after " << second << endl;
+    }
+
     return 0;
 }

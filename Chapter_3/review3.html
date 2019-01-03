@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Chapter 3 Review</title>
+    </head>
+
+    <body>
+        <h2>Terms</h2>
+        <ol type="i">
+            <li>
+                Assignment
+                <ul>Operation that assigns a value to a variable.</ul>
+            </li>
+            <li>
+                cin
+                <ul>"character input stream"</ul>
+            </li>
+            <li>
+                Concatenation
+                <ul>The joining of strings together like "snow" + "ball" is "snowball".</ul>
+            </li>
+            <li>
+                Conversion
+                <ul>Converting from one type like "int" to another type like "char".</ul>
+            </li>
+            <li>
+                Declaration
+                <ul>A statement that gives a name to an object(location in the memory).</ul>
+            </li>
+            <li>
+                Decrement
+                <ul>The operation of substraction.</ul>
+            </li>
+            <li>
+                Definition
+                <ul>A declaration that sets aside memory for an object.</ul>
+            </li>
+            <li>
+                Increment
+                <ul>The operation of addition.</ul>
+            </li>
+            <li>
+                Initialization
+                <ul>Giving an initial value to a variable.</ul>
+            </li>
+            <li>
+                Name
+                <ul>The name of a variable is preffered to be of letters, underscores, and numbers. It should not start with underscores or numbers, no double underscores in between the name and no spaces.</ul>
+            </li>
+            <li>
+                Narrowing
+                <ul>The conversion from a bigger type like "double" to a smaller type like "bool". The result is that some data is lost in that process.</ul>
+            </li>
+            <li>
+                Object
+                <ul>A location in the memory that can hold a value of a given type.</ul>
+            </li>
+            <li>
+                Operation
+                <ul>Any of the arithmetic operations. However, not all types have available all such operations.</ul>
+            </li>
+            <li>
+                Operator
+                <ul>The symbol that determines the type of operation. The operand is the value upon which the operation is performed.</ul>
+            </li>
+            <li>
+                Type
+                <ul>The type of value an object can hold. The object could only hold integers, single characters, string literals, and so on.</ul>
+            </li>
+            <li>
+                Type Safety
+                <ul>The practice of using objects only according to their rules that includes safely converting from one type to the other.</ul>
+            </li>
+            <li>
+                Value
+                <ul>A set of bits in memory interpreted according to a type. The data that an object holds.</ul>
+            </li>
+            <li>
+                Variable
+                <ul>A named object.</ul>
+            </li>
+        </ol>
+        <h2>Review Questions</h2>
+        <h4>What is meant by the term <i>prompt</i>?</h4>
+        <p>Encouraging the user to take action according to the instructions displayed from the program.</p>
+        <h4>Which operator do you use to read into a variable?</h4>
+        <p>The input operator ">>".</p>
+        <h4>If you want the user to input an integer into your program for a variable named "number", what are two lines of code you could write to ask the user to do it and to input the value into your program?</h4>
+        <p><i>cout << "Enter an integer value: ;</i></p>
+        <p><i>cin >> number;</i></p>
+        <h4>What is "\n" called and what purpose does it serve?</h4>
+        <p>It is a special character called "newline" and it moves the cursor to the next line.</p>
+        <h4>What terminates input of a string?</h4>
+        <p>"whitespace" which can be space, newline or tab characters.</p>
+        <h4>What terminates input into an integer?</h4>
+        <p>Characters that are not digits like letters and periods/commas.</p>
+        <h4>How would you write the next code in a single line of code?</h4>
+        <p><i>cout << "Hello, ";</i></p>
+        <p><i>cout << "first_name;</i></p>
+        <p><i>cout << "!\n";</i></p>
+        <br>
+        <p><i>cout << "Hello, " << first_name << "!\n";</i></p>
+        <h4>What is an object?</h4>
+        <p>It is a location in the memory that can hold certain type of values.</p>
+        <h4>What is a literal?</h4>
+        <p>Representation of values of certain types. You can have string literals like "Hello", integer literals like 2000, and so on.</p>
+        <h4>What kind of literals are there?</h4>
+        <p>String literals. integer literals, floating-point literals, single character literals, boolean literals, and pointer literals.</p>
+        <h4>What is a variable?</h4>
+        <p>A named object, that is, a location in the memory that contains a value and can be accessed through the use of that variable's name.</p>
+        <h4>What are the typical sizes for a "char", an "int", and a "double"?</h4>
+        <p>One byte, four bytes, and eight bytes.</p>
+        <h4>What measures do we use for the size of small entities in memory, such as "int"s and "string"s?</h4>
+        <p>The byte(8 bits).</p>
+        <h4>What is the difference between "=" and "=="?</h4>
+        <p>The first one assigns a value to a variable, the second one checks if two values are the same.</p>
+        <h4>What is a definition?</h4>
+        <p>A statement that sets aside memory for an object.</p>
+        <h4>What is an initialization and how does it differ from an assignment?</h4>
+        <p>Initialization assigns an initial value to a variable, assignment clears out the old value and gives it a new value.</p>
+        <h4>What is string concatenation and how do you make it work in C++?</h4>
+        <p>It is the joining of two strings, and it can be done with the use od the addition operator( + ).</p>
+        <h4>Which of the following are legal names in C++? If any name is not legal, why not?</h4>
+        <pre>
+            This_little_pig
+            latest thing
+            MiniMineMine
+            This_1_is fine
+            the_$12_method
+            number
+            2_For_1_special
+            _this_is_ok
+            correct?
+        </pre>
+        <p>Only "This_little_pig", "MiniMineMine", and "number" are correct. The others start with underscores or numbers, or contain symbols or spaces in them which is forbidden in C++.</p>
+        <h4>Give examples of legal names that you shouldn't use because they are likely to cause confusion?</h4>
+        <p>Names-names,foo-f00,fl-fI,x,y,z.</p>
+        <h4>What are some good rules for choosing names?</h4>
+        <p>Meaningful names that tell what they represent/do in our program as well as short.</p>
+        <h4>What is "type-safety" and why is it important?</h4>
+        <p>It is the practice of using objects according to their rules. You wouldn't want to substract "on" from the string literal "carbon" by use of the substraction operation. Nor would you want to convert double types into char since it will lead to errors in large programs.</p>
+        <h4>Why can conversion from "double" to "int" be a bad thing?</h4>
+        <p>Because the value of the double could be a value that requires a lot of memory, say 4.0000000000004, and when converted to an int, the exact value might have been lost since an int can't store that much memory like a double.</p>
+        <h4>Define a rule to help decide if a conversion from one type to another is safe or unsafe?</h4>
+        <p>If both types are of the same size then the conversion is safe.</p>
+    
+    </body>
+
+</html>

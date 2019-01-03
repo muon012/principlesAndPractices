@@ -32,6 +32,7 @@
 using stdext::hash_map;
 #else
 #include <ext/hash_map>
+
 using __gnu_cxx::hash_map;
 
 namespace __gnu_cxx {
@@ -40,7 +41,8 @@ namespace __gnu_cxx {
     {
         size_t operator()(const std::string& s) const
         {
-            return hash<char*>()(s.c_str());
+            // return hash<char*>()(s.c_str());
+			return hash<const char*>()(s.c_str()); // This is the correct line of code as opposed to the one before
         }
     };
 
