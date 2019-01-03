@@ -13,21 +13,27 @@ int main(){
     double var2{};
     cin >> operator_symbol >> var1 >> var2;
 
+    double res{};
     if(operator_symbol == "+"){
-        cout << var1 << " + " << var2 << " is: " << var1 + var2 << endl;
+        res = var1 + var2;
     }    
     else if(operator_symbol == "-"){
-        cout << var1 << " - " << var2 << " is: " << var1 - var2 << endl;
+        res = var1 - var2;
     }    
     else if(operator_symbol == "*"){
-        cout << var1 << " * " << var2 << " is: " << var1 * var2 << endl;
+        res = var1 * var2;
     }    
     else if(operator_symbol == "/"){
-        cout << var1 << " / " << var2 << " is: " << var1 / var2 << endl;
+        if(var2 == 0){
+            cout << "Can't divide by zero!" << endl;
+        }
+        res = var1 / var2;
     }
     else{
         cout << "Incorrect input!" << endl;
     }
+
+    cout << var1 << " " << operator_symbol << " " << var2 << " = " << res << endl;
 
     return 0;
 }
