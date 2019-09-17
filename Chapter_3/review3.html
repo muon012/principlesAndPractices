@@ -123,7 +123,7 @@
         <h4>What is an initialization and how does it differ from an assignment?</h4>
         <p>Initialization assigns an initial value to a variable, assignment clears out the old value and gives it a new value.</p>
         <h4>What is string concatenation and how do you make it work in C++?</h4>
-        <p>It is the joining of two strings, and it can be done with the use od the addition operator( + ).</p>
+        <p>It is the joining of two strings, and it can be done with the use of the addition operator( + ).</p>
         <h4>Which of the following are legal names in C++? If any name is not legal, why not?</h4>
         <pre>
             This_little_pig
@@ -138,15 +138,15 @@
         </pre>
         <p>Only "This_little_pig", "MiniMineMine", and "number" are correct. The others start with underscores or numbers, or contain symbols or spaces in them which is forbidden in C++.</p>
         <h4>Give examples of legal names that you shouldn't use because they are likely to cause confusion?</h4>
-        <p>Names-names,foo-f00,fl-fI,x,y,z.</p>
+        <p>Names-names,foo-f00,fl-fI. Pretty much names that are short and use letters like <i>i, o,</i> because they can look like <i>l, 0</i> respectively in some cases.</p>
         <h4>What are some good rules for choosing names?</h4>
         <p>Meaningful names that tell what they represent/do in our program as well as short.</p>
         <h4>What is "type-safety" and why is it important?</h4>
-        <p>It is the practice of using objects according to their rules. You wouldn't want to substract "on" from the string literal "carbon" by use of the substraction operation. Nor would you want to convert double types into char since it will lead to errors in large programs.</p>
+        <p>It is the practice of using objects according to their rules. You wouldn't want to substract "on" from the string literal "carbon" by use of the substraction operation. Nor would you want to convert double types into char because you are trying to fit a big chunk of memory into a small chunk resulting in loss of data.</p>
         <h4>Why can conversion from "double" to "int" be a bad thing?</h4>
         <p>Because the value of the double could be a value that requires a lot of memory, say 4.0000000000004, and when converted to an int, the exact value might have been lost since an int can't store that much memory like a double.</p>
         <h4>Define a rule to help decide if a conversion from one type to another is safe or unsafe?</h4>
-        <p>If both types are of the same size then the conversion is safe.</p>
+        <p>If both types are of the same size then the conversion is safe, or if it's a conversion from a type of small memory to a type of a larger memory.</p>
     
     </body>
 
