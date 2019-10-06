@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter 5 Review</title>
+</head>
+<body>
+    
+    <h2>Terms</h2>
+    <ol>
+        <li> Argument error
+            <ul>Functions, usually, take arguments. They expect those arguments to be of the correct data type
+                 the right number of them, and in the correct order too.
+            </ul>
+        </li>
+        <li> Assertion
+            <ul>A statement that states (asserts) an invariant(a condition that should always hold).</ul>
+        </li>
+        <li> catch
+            <ul>When you throw an exception, you want to be able to catch it by writing a catch statement.</ul>
+        </li>
+        <li> compile-time error
+            <ul>An error that happens during compilation. It is usually a syntax or type error.</ul>
+        </li>
+        <li> Container
+            <ul>A collection of data, like the c++ vector.</ul>
+        </li>
+        <li> Debugging
+            <ul>The process of finding errors, bugs, and removing them.</ul>
+        </li>
+        <li> Error
+            <ul>A bug in the code.</ul>
+        </li>
+        <li> Exception
+            <ul>It's an unprecedent event triggered while a program is run.</ul>
+        </li>
+        <li> Invariant
+            <ul>A condition that should always hold.</ul>
+        </li>
+        <li> Link-time error
+            <ul>An error that happens when several object files, translation units, can't be linked to create an executable
+                program.
+            </ul>
+        </li>
+        <li> Logic Error
+            <ul>An error made by faulty reasoning, for example computing the age of someone and getting a negative number as
+                an answer.
+            </ul>
+        </li>
+        <li> post-condition
+            <ul>A requirement of the return value of a function. We must make sure the output of a function is something
+                with an expected criteria.
+            </ul>
+        </li>
+        <li> pre-condition
+            <ul>A requirement of a function upon its arguments.</ul>
+        </li>
+        <li> Range error
+            <ul>If you exceed the range of a container, like a vector, then you will get this error.</ul>
+        </li>
+        <li> Requirement
+            <ul>When we are dealing with functions, we must make sure the arguments meet some requirements.
+                 Otherwise, we can't use them, or if we use them but they produce an illogical answer then 
+                 they fail the requirements. We can throw exceptions when the requirements are broken.
+            </ul>
+        </li>
+        <li> run-time error
+            <ul>An error that happens when the program is executed.</ul>
+        </li>
+        <li> Syntax Error
+            <ul>An error that happens when we fail to use the specific programming language's rules, like forgetting
+                 to add a closing parentheses.
+            </ul>
+        </li>
+        <li> Testing
+            <ul>A systematic way of searching for errors using huge numbers of selected sets</ul>
+        </li>
+        <li> throw
+            <ul>Reporting an unprecendet error. </ul>
+        </li>
+        <li> Type Error
+            <ul>Using different data types than what they were expected to be.</ul>
+        </li>
+    </ol>
+
+    <h2>Review</h2>
+
+
+
+    <h4>Name four major types of errors and briefly define each one.</h4>
+    <p>Compile-time errors: Happen when the compiler finds type or syntax errors.</p>
+    <p>Link-time errors: Error combining translation units.</p>
+    <p>Run-time errors: Errors that happen during execution of program.</p>
+    <p>Logi errors: Errors coming from bab reasoning in part by the programmer.</p>
+
+    <h4>What kind of errors can we ignore in student programs?</h4>
+    <p>Errors due to hardware/sofware issues</p>
+
+
+    <h4>What guarantees should every completed project offer?</h4>
+    <p>It should always do the right thing.</p>
+
+    <h4>List three approaches we can take to eliminate errors in programs and produce acceptable software:</h4>
+    <p>Organize software.</p>
+    <p>Use debugging and testing.</p>
+    <p>Make sure remaining errors are not serious.</p>
+
+    <h4>Why do we hate debugging?</h4>
+    <p>It is the most time consuming and hardest part of creating software.</p>
+
+    <h4>What is a syntax error?</h4>
+    <p>Am error due to mispelled statements that the compiler doesn't recognize as part of the programming language rules.</p>
+
+    <h4>What is a type error?</h4>
+    <p>Using a different type than what the function requires.</p>
+
+    <h4>What is a linker error?</h4>
+    <p>If you call a function that has not been defined in any of your header files, then the linker displays this error
+         because it can't find such function in your files.
+    </p>
+
+    <h4>What is a logic error?</h4>
+    <p>What if your program finds the area of a figure by asking the user for some measurements but the user inputs a
+         negative number, resulting in a negative area.
+    </p>
+
+    <h4>List 4 potential sources of program errors discussed in the text.</h4>
+    <p>Poor specification: Did we specify what the program should do and shouldn't do.</p>
+    <p>Incomplete programs: Untested cases.</p>
+    <p>Unexpected arguments/input/state(data)</p>
+    <p>Logical errors.</p>
+
+    <h4>How do you know if a result is plausible? What techniques do you have to answer such questions?</h4>
+    <p>By using estimation we can try to answer such question. If it is very off from the <i>guesstimation</i> then 
+    more than likely the answer is not plausible.</p>
+
+    <h4>Compare and contrast having the caller of a function handle a run-time error vs. the called function's handling
+         the run-time error.
+    </h4>
+    <p>If the caller handles the error, it results in messy code that tries to expose implemenation by the called function.</p>
+    <p>If the called function does it, it allows for checking to be done in one place as opposed to anywhere where the function
+        was called, which would be the caller method. Checking the arguments in the function is better as opposed to the caller 
+        checking.
+    </p>
+
+    <h4>Why is using exceptions a better idea than returning an "error value"?</h4>
+    <p>Because sometimes that value is not used in error testing by the user or callee.</p>
+
+    <h4>How do you test if an input operation succeeded?</h4>
+    <p>If it produced an plausible result.</p>
+
+    <h4>Describe the process of how exceptions are thrown and caught.</h4>
+    <p>If a certain condition happens, the function throws an exception. It signals something went wrong. Then the catch part
+        of the program will catch that exception, assumming the catch is expecting that specific exception, and then 
+        terminate the program or do something else.
+    </p>
+    
+    <h4>Why with a vector called v, is <i>v[v.size()]</i> a range error? What would be the result of calling this?</h4>
+    <p>The result is an out_of_range error because the vector's last element has an index of size() - 1.</p>
+
+    <h4>Define pre-condition and post-condition.</h4>
+    <p>Just making sure the arguments, initial values, return values are acceptable within a certain criteria. One is 
+        for the beginning of the function and the other is for the end. It doesn't have to be a function just any computation
+        that requires checking the input and the output.
+    </p>
+
+    <h4>When would you not test a pre-condition?</h4>
+    <p>When it is more expensive than using the function.</p>
+
+    <h4>When would you not test a post-condition?</h4>
+    <p>Same as last answer.</p>
+
+    <h4>What are the steps in debugging a program?</h4>
+    <p>Compile, link, and get the program to do what it's supposed to do.</p>
+
+    <h4>Why does commenting help in debugging?</h4>
+    <p>Because it helps avoiding design mistakes. It makes you think deeply what the program needs when you use comments 
+        to write the pre- and post- conditions.
+    </p>
+
+    <h4>How does testing differ from debugging?</h4>
+    <p>Debugging is making sure your program does something right. Testing is making sure the program does something right
+        regardless of the variety of different inputs.
+    </p>
+
+</body>
+</html>
