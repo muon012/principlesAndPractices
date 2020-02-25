@@ -65,6 +65,5 @@ int main(void)
     cout << "Random number (0-9): ";
     cout << r_number << endl;
 
-
     return 0;
 }
