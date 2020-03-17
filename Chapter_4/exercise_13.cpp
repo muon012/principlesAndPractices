@@ -101,7 +101,7 @@ int main(void)
     cin >> limit;
     cin.ignore(999, '\n');
 
-    // Create a vector with range 2-limit.
+    // Create a vector with range [2, limit].
     vector<int> whole_Numbers = up_to_x(limit);
 
     vector<int> marked_Numbers = marked(whole_Numbers);

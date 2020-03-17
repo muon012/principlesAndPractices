@@ -48,12 +48,13 @@ int main(void)
     cin.ignore(999, '\n');
     return 0;
     }
-    // catch (runtime_error& e)
-    // {
-    //     cerr << "You got a runtime error:" << endl;
-    //     cerr << e.what() << endl;
-    //     return 1;
-    // }
+    // Try commeting out this runtime_error catch to see that the compiler terminates with an "uncaught exception"
+    catch (runtime_error& e)
+    {
+        cerr << "You got a runtime error:" << endl;
+        cerr << e.what() << endl;
+        return 1;
+    }
     catch (out_of_range)
     {}
 }
